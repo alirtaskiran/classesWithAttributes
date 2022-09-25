@@ -1,4 +1,13 @@
 public class Product {
+    public Product(int id, String name, String description, double price, int stockAmount, String color) {
+        System.out.println("Yapici blok calisti...");
+        this.name = name;
+        this.id = id;
+        this.price = price;
+        this.stockAmount = stockAmount;
+        this.description = description;
+    }
+
     private int id;
     private String name;
     private String description;
@@ -60,7 +69,7 @@ public class Product {
     }
 
     public String getCodeNumber() {
-        return this.name.substring(0,1) + id;
+        return this.name.substring(0, 1) + id;
     }
 
     public void setCodeNumber(String codeNumber) {
